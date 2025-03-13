@@ -85,5 +85,43 @@ section h2 {
 #projects ul li a:hover {
   color: #005fa3;
 }
+/* Style for the Other Work section */
+#other-work {
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+#other-work h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#other-work p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+#other-work a {
+  color: #0077cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#other-work a:hover {
+  color: #005fa3;
+}
+footer a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffdd57;  /* A contrasting color for hover effect */
+}
 
 /* Skil
