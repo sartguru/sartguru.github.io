@@ -71,12 +71,15 @@ section h2 {
   padding-left: 0;
 }
 
-/* New Project Grid Styles */
+/* Project Grid Styles */
 .project-grid {
   display: grid;
+  /* Creates uniform spacing between grid items horizontally & vertically */
   gap: 30px;
-  margin: 40px auto;
+  /* Centers the grid container, sets max width */
   max-width: 1200px;
+  margin: 40px auto;
+  /* Use auto-fill to create responsive columns, each at least 300px wide */
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   padding: 0 20px;
 }
@@ -163,4 +166,46 @@ section h2 {
 
 #skills ul li {
   font-size: 1.1rem;
-  margin-bottom:
+  margin-bottom: 8px; /* Restored line for spacing */
+}
+
+/* Footer styles */
+footer {
+  background: #005f73; /* Dark teal background */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #ffdd57; /* A bright yellow */
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  header h2 {
+    font-size: 1.3rem;
+  }
+  
+  section h2 {
+    font-size: 1.8rem;
+  }
+  
+  /* For smaller screens, a single column layout */
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+}
