@@ -65,27 +65,67 @@ section h2 {
   line-height: 1.8;
 }
 
-/* Projects Section */
+/* Projects Section - Remove default list style */
 #projects ul {
   list-style: none;
   padding-left: 0;
 }
 
-#projects ul li {
-  margin-bottom: 10px;
+/* New Project Grid Styles */
+.project-grid {
+  display: grid;
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 1200px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  padding: 0 20px;
 }
 
-#projects ul li a {
+.project-card {
+  background: #fff;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  margin: 15px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin: 0 15px 15px;
+  line-height: 1.5;
+}
+
+.project-card .button {
+  margin: 15px;
+  padding: 10px 15px;
+  background: #005f73;
+  color: #fff;
   text-decoration: none;
-  color: #0077cc;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
 
-#projects ul li a:hover {
-  color: #005fa3;
+.project-card .button:hover {
+  background: #0a9396;
 }
-/* Style for the Other Work section */
+
+/* Other Work Section */
 #other-work {
   padding: 20px;
   margin-bottom: 20px;
@@ -114,42 +154,13 @@ section h2 {
 #other-work a:hover {
   color: #005fa3;
 }
-/* Footer styles */
-footer {
-  background: #005f73; /* Dark teal background */
-  color: #fff;         /* White text */
-  text-align: center;
-  padding: 20px;
+
+/* Skills Section */
+#skills ul {
+  list-style: none;
+  padding-left: 0;
 }
 
-footer {
-  background: #005f73; /* A dark teal */
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-footer a {
-  color: #ffdd57; /* A bright yellow */
-  text-decoration: underline;
-  transition: color 0.3s ease;
-}
-footer a:hover {
-  color: #fff;
-}
-
-
-
-/* Responsive styling for smaller screens */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-  
-  header h2 {
-    font-size: 1.3rem;
-  }
-  
-  section h2 {
-    font-size: 1.8rem;
-  }
-}
+#skills ul li {
+  font-size: 1.1rem;
+  margin-bottom:
